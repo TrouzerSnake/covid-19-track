@@ -91,7 +91,7 @@ class collegeBoreal extends StatelessWidget {
       ),
       home: Scaffold( 
         appBar: AppBar( 
-          title: Text("COLLEGEBOREAL"),
+          title: Text(Strings.appBarTitle),
         ),
       ),
     );
