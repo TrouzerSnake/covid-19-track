@@ -1,6 +1,9 @@
 // CONNOR HYATT
 // Projet dde session demo
 
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
 void main() {
   runApp(MaterialApp( 
     home: MyApp(),
@@ -9,12 +12,23 @@ void main() {
 }
 
 final ThemeData themeData = ThemeData(
-  canvasColor: Colors.redAccent,
+  canvasColor: Colors.white,
 );
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext ctx) {
+    var front = 'Bienvenue!';
+    
+    return MaterialApp( 
+      title: front,
+      home: Scaffold( 
+        appBar: AppBar( 
+          title: Text('Pour débuté entré votre nom'),
+        ),
+        body: Image.network('https://www.vmcdn.ca/f/files/shared/corporate-logos/_logo_collegeboreal_1500x600.png;w=630')
+      ),
+    );
     return Scaffold(
       body: Center(
         child: Flatbutton(
@@ -54,7 +68,7 @@ class PageThree extends MaterialPageRoute<Null> {
   PageThree() : super(builder: (BuildContext ctx) {
     return Scaffold(
       appBar: AppBar(
-        title: TextField("Comment vous sentez vous"),
+        title: TextField("Comment vous sentez vous 1=Mal 2=Bien 3=Excellent"),
         backgroundColor: Theme.of(ctx).canvasColor,
         elevation: 4.0,
         actions: <Widget>[ 
@@ -84,15 +98,18 @@ class PageThree extends MaterialPageRoute<Null> {
 class CollegeBoreal extends StatelessWidget { 
   @override 
   Widget build(BuildContext ctx) { 
+    var title = 'Formulaire COVID-19 pour';
+
     return MaterialApp( 
-      title: Strings.appBarTitle,
+      title: title,
       theme: ThemeData( 
         primaryColor: Colors.black ,
       ),
       home: Scaffold( 
         appBar: AppBar( 
-          title: Text(Strings.appBarTitle),
+          title: Text(title),
         ),
+        body: Image.network('https://www.vmcdn.ca/f/files/shared/corporate-logos/_logo_collegeboreal_1500x600.png;w=630')
       ),
     );
   }
