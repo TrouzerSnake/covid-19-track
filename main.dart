@@ -50,7 +50,7 @@ class PageTwo extends MaterialPageRoute<Null> {
         });
 }
 
-class PageThree Extends MaterialPageRoute<Null> {
+class PageThree extends MaterialPageRoute<Null> {
   PageThree() : super(builder: (BuildContext ctx) {
     return Scaffold(
       appBar: AppBar(
@@ -80,12 +80,12 @@ class PageThree Extends MaterialPageRoute<Null> {
   });
 }
 
-      
-class collegeBoreal extends StatelessWidget { 
+
+class CollegeBoreal extends StatelessWidget { 
   @override 
   Widget build(BuildContext ctx) { 
     return MaterialApp( 
-      title: Strings.appBarTitle
+      title: Strings.appBarTitle,
       theme: ThemeData( 
         primaryColor: Colors.black ,
       ),
