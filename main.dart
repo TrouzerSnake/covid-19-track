@@ -79,3 +79,21 @@ class PageThree Extends MaterialPageRoute<Null> {
     );
   });
 }
+
+      
+class collegeBoreal extends StatelessWidget { 
+  @override 
+  Widget build(BuildContext ctx) { 
+    return MaterialApp( 
+      title: Strings.appBarTitle
+      theme: ThemeData( 
+        primaryColor: Colors.black ,
+      ),
+      home: Scaffold( 
+        appBar: AppBar( 
+          title: Text("COLLEGEBOREAL"),
+        ),
+      ),
+    );
+  }
+}
