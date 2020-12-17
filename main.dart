@@ -148,3 +148,4 @@ class CollegeBoreal extends StatelessWidget {
     );
   }
 }
+
